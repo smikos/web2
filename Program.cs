@@ -41,7 +41,7 @@ namespace WebApplication.Controllers
         [HttpGet("statistics")]
         public IActionResult GetStatistics()
         {
-            // Чтение статичного файла с информацией о кэше
+           
             string cacheStats = System.IO.File.ReadAllText("cache_statistics.txt");
             return Content(cacheStats, "text/plain");
         }
